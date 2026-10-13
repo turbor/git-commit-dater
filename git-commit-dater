@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Launcher for git-commit-dater. Runs the TUI from the venv in the current git repo.
+set -euo pipefail
+DIR="/home/david-h/github/git-commit-dater"
+exec "$DIR/.venv/bin/python" "$DIR/git_commit_dater.py" "$@"
